@@ -1,0 +1,120 @@
+.form {
+  max-width: 800px;
+  margin-left: 100px;
+}
+
+.care {
+  max-width: 642x;
+  padding: 40px;
+}
+.card{
+  font-size: 60px;
+  font-weight: 600;
+  color: #000000;
+  margin-bottom: 12px;
+  letter-spacing: normal;
+  letter-spacing: -0.5px;
+  line-height: 1.15;
+}
+
+.care .form-heading {
+  font-size: 45px;
+  font-weight: 600;
+  color: #000000;
+  margin-bottom: 12px;
+  letter-spacing: normal;
+  letter-spacing: -0.5px;
+  line-height: 1.15;
+}
+
+.form-subtext {
+  font-size: 15px;
+  color: #555;
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
+
+.care-form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.care-form input {
+  padding: 14px 16px;
+  font-size: 14px;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  outline: none;
+}
+
+.care-form input:focus {
+  border-color: #ffffff;
+}
+
+.phone-field {
+  display: flex;
+  align-items: center;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.country-code {
+  padding: 14px 12px;
+  font-size: 14px;
+  background: #f9fafb;
+  border-right: 1px solid #e5e7eb;
+}
+
+.phone-field input {
+  border: none;
+  flex: 1;
+}
+
+.checkbox {
+  display: flex;
+  gap: 10px;
+  font-size: 13px;
+  color: #555;
+  line-height: 1.4;
+  margin-top: 6px;
+}
+
+.checkbox a {
+  color: #4f8df6;
+  text-decoration: underline;
+}
+
+.submit-btn {
+  margin-top: 12px;
+  padding: 14px;
+  background-color: #4f8df6;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 500;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.submit-btn:hover {
+  background-color: #3f7de0;
+}
+@media (min-width: 768px) {
+  .card {
+    font-size: 36px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .card {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .card {
+    font-size: 60px;
+  }
+}
