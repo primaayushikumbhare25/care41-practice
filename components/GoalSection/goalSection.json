@@ -1,0 +1,29 @@
+{
+  "title": "Our Goals for Better Elderly Care",
+  "goals": [
+    {
+      "id": 1,
+      "title": "Community Engagement",
+      "icon": "/circle1.png",
+      "width": 45,
+      "height": 45,
+      "iconClass": "smallcircle"
+    },
+    {
+      "id": 2,
+      "title": "Medical Support",
+      "icon": "/circle2.png",
+      "width": 50,
+      "height": 65,
+      "iconClass": "smallcircle1"
+    },
+    {
+      "id": 3,
+      "title": "Home Care Assistance",
+      "icon": "/circle3.png",
+      "width": 45,
+      "height": 45,
+      "iconClass": "smallcircle2"
+    }
+  ]
+}

@@ -39,7 +39,8 @@ function header() {
               <Link href="/about">(+91) 9374873623</Link>
             </div>
           </li>
-        <button className="login-btn">Sign In</button>
+        
+        <Link href="/signup"><button className="login-btn">Sign In/ Sign Up</button></Link>
         </ul>
         </div>
 

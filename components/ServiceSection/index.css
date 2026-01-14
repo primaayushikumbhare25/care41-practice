@@ -1,11 +1,26 @@
-.services-section {
+/* .services-section {
   display: flex;
   flex-direction: column;
   gap: 40px;
-  margin-left: 135px;
-  margin-right: 10px;;
-  margin-top: 80px;
+
+  max-width: 1200px;  
+  width: 100%;
+  margin: 80px auto;  
+  padding: 0 10px;    
+} */
+ .services-section {
+  max-width: 1200px;
+  margin: 80px auto;
+  padding: 0 10px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  text-align: center;
+  margin-left : 35px auto;
 }
+
+
 
 .heading {
   font-size: 40px;
@@ -28,6 +43,8 @@
 .cards {
   display: flex;
   gap: inherit;
+  margin-right: 45px;
+  margin-left : 45px;
 }
 .cards-wrapper {
   position: relative;
@@ -92,37 +109,38 @@
   position: absolute;
   bottom: 5px;
   right: 1px;
-  width: 157.50921630859375;
-  height: 157.52207946777344;
+  width: 157;
+  height: 157;
 }
 
 .cards-wrapper2 .group {
   position: absolute;
   bottom: 5px;
   right: 1px;
-  width: 157.50921630859375;
-  height: 157.52207946777344;
+  width: 157;
+  height: 157;
 }
 .cards-wrapper3 .Vector1 {
   position: absolute;
   bottom: 5px;
   right: 1px;
-  width: 157.50921630859375;
-  height: 157.52207946777344;
+  width: 157;
+  height: 157;
 }
 
 .cards-wrapper4 .Vector {
   position: absolute;
   bottom: 5px;
   right: 1px;
-  width: 157.50921630859375;
-  height: 157.52207946777344;
+  width: 157;
+  height: 157;
 }
 
 .services-section .more-services {
   margin-top: 24px;
   text-align: left;
   display: flex;
+  margin-left: 40px;
 }
 
 .services-section .more-link {
@@ -130,7 +148,7 @@
   align-items: center;
   gap: 6px;
   margin-left: 15px;
-  font-family:Poppins;
+  font-family: Poppins;
   font-size: 14px;
   font-weight: 400;
   color: #4a90e2;
@@ -172,8 +190,8 @@
   width: 24px;
   height: 24px;
   border-radius: 50%;
-  padding : 3px;
-  background-color:#2563eb;
+  padding: 3px;
+  background-color: #2563eb;
   display: flex;
   align-items: center;
   justify-content: center;

@@ -101,20 +101,21 @@
 .submit-btn:hover {
   background-color: #3f7de0;
 }
-@media (min-width: 768px) {
+
+@media (min-width: 1024px) {
   .card {
-    font-size: 36px;
-  }
+    color: #000;
+    letter-spacing: normal;
+    letter-spacing: -.5px;
+    margin-bottom: 12px;
+    font-size: 39px;
+    font-weight: 600;
+    line-height: 1.15;
+}
 }
 
 @media (min-width: 1024px) {
   .card {
-    font-size: 20px;
-  }
-}
-
-@media (min-width: 1440px) {
-  .card {
-    font-size: 60px;
+    display : flex;
   }
 }
