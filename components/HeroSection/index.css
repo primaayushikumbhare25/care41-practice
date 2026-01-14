@@ -1,8 +1,7 @@
 .overall {
   display: flex;
-  gap: 100px;
-  margin-left: 120px;
-  padding: 30px;
+  gap: 70px;
+  margin-left:80px;
 }
 
 .hero {
@@ -18,20 +17,6 @@
   margin-left: 100px;
 }
 
-/* .heading {
-  /* font-size: 48px;
-  font-weight: 450;
-  line-height: 1.2;
-  color: #1a1a1a; */
-/* font-family: Poppins;
-  font-weight: 600;
-  font-style: SemiBold;
-  margin-top: 40px;
-  font-size: 60px;
-  line-height: 72px;
-  letter-spacing: -2.2%;
-  font-size: 48px; */
-/* } */
 .care {
   max-width: 642x;
   padding: 40px;
@@ -40,7 +25,7 @@
 .form-heading {
   font-size: 45px;
   font-weight: 600;
-  color: #111;
+  color: #000000;
   margin-bottom: 12px;
   letter-spacing: normal;
   letter-spacing: -0.5px;
@@ -132,15 +117,10 @@
   position: relative;
   width: 360px;
   height: 520px;
-  /* border: 2px solid #ffffff; */
-  /* border-radius: 12px; */
+  
 }
 
-/* .image {
-  position: absolute;
-  border-radius: 12px;
-  overflow: hidden;
-} */
+
 
 .image {
   position: absolute;
@@ -303,4 +283,8 @@
     margin-left: 0;
     max-width: 100%;
   }
+} */
+/* .form-heading {
+  position: relative;
+  z-index: 9999;
 } */

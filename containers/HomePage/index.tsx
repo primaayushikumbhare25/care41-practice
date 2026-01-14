@@ -1,7 +1,7 @@
 import Header from "@/components/Header";
 import HeroSection from "@/components/HeroSection";
 import ServiceSection from "@/components/ServiceSection";
-import React from "react";
+import GoalSection from "@/components/GoalSection";
 
 function HomePage() {
   return (
@@ -9,6 +9,7 @@ function HomePage() {
       <Header />
       <HeroSection />
       <ServiceSection />
+      <GoalSection />
     </div>
   );
 }
