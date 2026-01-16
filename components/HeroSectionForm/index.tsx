@@ -2,14 +2,16 @@
 import React, { useState } from "react";
 import "./index.css";
 import Image from "next/image";
+import PhoneInput from "react-phone-input-2";
+import "react-phone-input-2/lib/style.css";
 
 function Hero() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
-  const [phone, setPhone] = useState("");
+  const [phone, setPhone] = useState("+1");
   const [terms, setTerms] = useState(false);
 
-  const handleSubmit = (e:any) => {
+  const handleSubmit = (e: any) => {
     e.preventDefault();
 
     console.log("Form submit event:", e);
@@ -30,7 +32,9 @@ function Hero() {
   return (
     <div className="form">
       <section className="care">
-        <h1 className="card">Compassionate care for elderly well-being.</h1>
+        <h1 className="card">
+          Comprehensive Caregiving <br /> Services For Families
+        </h1>
 
         <p className="form-subtext">
           Everything you need to ensure your loved one's wellbeing
@@ -53,13 +57,17 @@ function Hero() {
             onChange={(e) => setEmail(e.target.value)}
           />
 
-          <div className="phone-field">
-            <span className="country-code">+91</span>
+
+          <div className="phone-wrapper">
+            <select className="country-select" defaultValue="+1">
+              <option value="+1">USA (+1)</option>
+              <option value="+91">India (+91)</option>
+            </select>
+
             <input
               type="tel"
               placeholder="Phone number*"
-              value={phone}
-              onChange={(e) => setPhone(e.target.value)}
+              className="phone-input"
             />
           </div>
 
@@ -72,7 +80,7 @@ function Hero() {
               onChange={(e) => setTerms(e.target.checked)}
             />
             <span>
-              By checking this box, you agree to Care41{" "}
+              By checking this box, you confirm that you agree to Care41{" "}
               <a href="#">Terms & Conditions</a> and{" "}
               <a href="#">Privacy Policy</a>.
             </span>

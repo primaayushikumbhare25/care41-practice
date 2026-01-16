@@ -11,7 +11,7 @@ function Hero() {
       <div className="care-wrapper">
       <div className="care-container">
         <div className="image image-one">
-          <Image src="/image1.jpg" alt="Care" width={260} height={400} />
+          <Image src="/image1.jpg" alt="Care" width={280} height={600} />
         </div>
         <div className="info-card top-card">
           <h4>Care</h4>
