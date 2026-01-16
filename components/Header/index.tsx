@@ -1,53 +1,69 @@
 "use client";
 
 import Link from "next/link";
-import { useState } from "react";
-import "./index.css";
 import Image from "next/image";
-import { FiPhoneCall } from "react-icons/fi";
+import { usePathname } from "next/navigation";
 import { Phone } from "lucide-react";
+import { FaWhatsapp } from "react-icons/fa6";
+import "./index.css";
 
-function header() {
-  // const [menuOpen, setMenuOpen] = useState(false);
+export default function Header() {
+  const pathname = usePathname();
+
   return (
     <header className="header">
       <nav className="navbar">
         {/* Logo */}
-        <div className="logo">
-          <Link href="/">
-            <Image src="/logo.png" alt="My App Logo" width={120} height={40} />
+        <Link href="/" className="logo">
+          <Image src="/logo.png" alt="My App Logo" width={95} height={28} />
+        </Link>
+
+        {/* Right Section */}
+        <div className="nav-right">
+          <ul className="nav-links">
+            <li>
+              <Link href="/" className={pathname === "/" ? "active" : ""}>
+                Home
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="/services"
+                className={pathname === "/services" ? "active" : ""}
+              >
+                Services
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="/packages"
+                className={pathname === "/packages" ? "active" : ""}
+              >
+                Packages
+              </Link>
+            </li>
+          </ul>
+
+          {/* Phone */}
+          <div className="phone">
+            <Phone size={20} />
+            <span className="phoneno">(+91) 9374873623</span>
+            <a
+              href="https://wa.me/919930007241"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Chat on WhatsApp"
+            >
+              <FaWhatsapp className="whatsapp-icon" />
+            </a>
+          </div>
+
+          {/* Button */}
+          <Link href="/signup">
+            <button className="login-btn">Sign Up</button>
           </Link>
         </div>
-
-        {/* Navigation */}
-        <div className = "nav">
-
-        <ul className="nav-links">
-          <li>
-            <Link className = "ans" href="/">Home</Link>
-          </li>
-          <li>
-            <Link href="/services">Services</Link>
-          </li>
-          <li>
-            <Link href="/about">Packages</Link>
-          </li>
-          <li>
-            <div className="phone">
-              <Phone className="phone-icon" />
-            
-              <Link href="/about">(+91) 9374873623</Link>
-            </div>
-          </li>
-        
-        <Link href="/signup"><button className="login-btn">Sign In/ Sign Up</button></Link>
-        </ul>
-        </div>
-
-        {/* Button */}
       </nav>
     </header>
   );
 }
-
-export default header;

@@ -1,64 +1,93 @@
 .header {
   width: 100%;
-  background-color: #ffffff;
-  border-bottom: 1px; 
+  background: #ffffff;
+  /* border-bottom: 1px solid #F8F9FA; */
+  box-shadow: 0 2px 7px #f8f9fa;
+  height: 90px;
 }
 
 .navbar {
-  display: flex;
+  justify-content: space-between;
   align-items: center;
-  justify-content: space-between;
-
-  padding: 16px 60px;
-  margin-bottom: 25px;
-  justify-content: space-between;
-  background-color: #fff;
-  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.08);
+  max-width: 1334px;
+  margin: 0 auto;
+  padding: 21px;
+  /* max-width: 1269px; */
+  margin: 0 auto;
+  padding: 21px;
+  display: flex;
 }
 
+/* Logo */
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+/* Right section */
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 43px;
+}
+
+/* Links */
 .nav-links {
   display: flex;
-  gap: 25px;
-  margin-top: 26px;
-  margin-bottom: 26px;
+  align-items: center;
+  gap: 28px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .nav-links a {
-  text-decoration: none;
-  color: #333;
+  font-size: 187x;
   font-weight: 500;
-  font-size: 17px;
+  color: #111;
+  text-decoration: none;
+}
+
+.nav-links a.active {
+  color: #4a90e2;
+  padding-bottom: 4px;
 }
 
 .nav-links a:hover {
   color: #4a90e2;
+  border-bottom: 2px solid #4a90e2;
 }
 
+/* Phone */
+.phone {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 21px;
+  font-weight: 500;
+  color: #4a90e2;
+}
+.phone .phoneno {
+  color: black;
+  font-size: 16px;
+  font-weight: 600;
+}
+.phone .whatsapp-icon {
+  color: #4a90e2;
+  font-size: 21px;
+}
+
+/* Button */
 .login-btn {
-  padding: 8px 18px;
-  background-color: #6c97f3;
-  color: #fff;
+  padding: 8px 20px;
+  font-size: 14px;
+  background: #4a90e2;
+  color: white;
   border: none;
   border-radius: 6px;
   cursor: pointer;
 }
 
 .login-btn:hover {
-  background-color: #6c97f3;
+  background: #4a90e2;
 }
-
-.phone {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  color: #2563eb;
-  font-weight: 500;
-}
-
-.phone-icon {
-  font-size: 18px;
-}
-/* .logo {
-  margin-right: 350px;
-  
-} */
