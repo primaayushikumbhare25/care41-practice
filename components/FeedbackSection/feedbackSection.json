@@ -1,0 +1,26 @@
+{
+  "title": "Hear It From Our Customers",
+  "testimonials": [
+    {
+      "id": 1,
+      "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quo repellendus nihil qui iure animi maxime consequuntur aliquid sed tempore, amet!",
+      "name": "Elizabeth Anderson",
+      "role": "Senior",
+      "image": "/icon.jpg"
+    },
+    {
+      "id": 2,
+      "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quo repellendus nihil qui iure animi maxime consequuntur aliquid sed tempore, amet!",
+      "name": "Elizabeth Anderson",
+      "role": "Senior",
+      "image": "/icon.jpg"
+    },
+    {
+      "id": 3,
+      "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quo repellendus nihil qui iure animi maxime consequuntur aliquid sed tempore, amet!",
+      "name": "Elizabeth Anderson",
+      "role": "Senior",
+      "image": "/icon.jpg"
+    }
+  ]
+}

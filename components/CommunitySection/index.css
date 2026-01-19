@@ -1,0 +1,12 @@
+.community {
+  max-width: 1200px;
+  margin: 80px auto;
+  padding: 0 24px;
+  text-align: left;
+}
+.community-heading {
+  font-size: 40px;
+  font-weight: 600;
+  margin-bottom: 48px;
+  color: #1f2937;
+}

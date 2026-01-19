@@ -1,0 +1,43 @@
+{
+  "title": "Core Services We Offer for Comprehensive Care",
+  "description": "We hire only the best people, choosing from 30 applicants for 1 position.",
+  "services": [
+    {
+      "id": 1,
+      "title": "CCTV Service Provider",
+      "subtitle": "Your eyes, your safety, our priority.",
+      "image": "/camera.png",
+      "className": "cards-wrapper",
+      "imageClass": "camera"
+    },
+    {
+      "id": 2,
+      "title": "Yoga Sessions",
+      "subtitle": "Balance and wellness through yoga.",
+      "image": "/Group.png",
+      "className": "cards-wrapper2",
+      "imageClass": "group"
+    },
+    {
+      "id": 3,
+      "title": "Medical Care",
+      "subtitle": "Expert care for your loved ones.",
+      "image": "/Vector1.png",
+      "className": "cards-wrapper3",
+      "imageClass": "Vector1"
+    },
+    {
+      "id": 4,
+      "title": "Physical Therapy",
+      "subtitle": "Rebuilding strength with care.",
+      "image": "/Vector.png",
+      "className": "cards-wrapper4",
+      "imageClass": "Vector"
+    }
+  ],
+  "moreServices": {
+    "text": "Show more core services",
+    "link": "/services",
+    "arrowImage": "/arrow.png"
+  }
+}
