@@ -20,7 +20,7 @@
     margin-top: 30px;
   display: flex;
   flex-direction: column;
-  gap: 14px; /* space between each question box */
+  gap: 14px; 
 }
 
 .faq-item {

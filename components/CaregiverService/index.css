@@ -4,7 +4,7 @@
   padding: 60px 20px;
 }
 
-/* .caregiver-card {
+ .caregiver-card {
   background-color: #6cc57c;
   border-radius: 14px;
   width: 100%;
@@ -12,21 +12,8 @@
   padding: 50px;
   display: flex;
   justify-content: space-between;
-  align-items: center;
-} */
- .caregiver-card {
-  background-color: #6cc57c;
-  border-radius: 14px;
-  width: 100%;
-  max-width: 1200px;
-  padding: 50px 50px 50px 50px; 
-  display: flex;
-  justify-content: space-between;
   align-items: flex-end; 
 }
-
-
-/* LEFT */
 
 .caregiver-left {
   width: 55%;
@@ -78,8 +65,6 @@
   opacity: 0.9;
 }
 
-/* RIGHT IMAGE */
-
 .caregiver-right img {
   object-fit: contain;
   margin-bottom: -50px;
@@ -109,9 +94,6 @@
   padding: 14px;
   font-size: 15px;
 }
-
-
-
 
 @media (max-width: 900px) {
   .caregiver-card {

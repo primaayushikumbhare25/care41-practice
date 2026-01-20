@@ -1,4 +1,3 @@
-
 "use client";
 import React, { useState } from "react";import Image from "next/image";
 import "./index.css";
@@ -42,7 +41,6 @@ export default function CaregiverService() {
              value = {email}
              onChange = {(e) => setEmail(e.target.value)}
              />
-            {/* <input type="tel" placeholder="+91 Phone number (optional)" /> */}
             <div className="phone-group">
               <select>
                 <option value="+91">+91</option>

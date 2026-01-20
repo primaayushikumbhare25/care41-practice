@@ -1,20 +1,16 @@
 import Link from "next/link";
 import "./index.css";
 import {
-  Clock3,
-  Linkedin,
-  Facebook,
-  Instagram,
-  Mail,
-  MapPin,
-  Phone,
-  LinkedinIcon,
-} from "lucide-react";
+  services , 
+  siteLinks , 
+  socialLinks,
+  socialDetails,
+}from "./footer"
 
 export default function Footer() {
   return (
     <footer className="footer">
-      {/* About Section */}
+
       <div className="footer-box">
         <div className="about-website">
           <h1 className="footer-logo">
@@ -32,81 +28,46 @@ export default function Footer() {
       <div className="footer-section">
         <h1 className="footer-title">Our Services</h1>
         <ul className="footer-list">
-          <li className="footer-item">Medical Care</li>
-          <li className="footer-item">Yoga Session</li>
-          <li className="footer-item">Physical Therapy</li>
-          <li className="footer-item">CCTV</li>
-          <li className="footer-item">Spiritual Advancement</li>
+         {services.map((service , index) => (
+          <li key = {index} className = "footer-item">
+            {service}
+          </li>
+         ))}
         </ul>
       </div>
 
-      {/* Site Links Section */}
+
       <div className="footer-section">
         <h1 className="footer-title">Site Links</h1>
         <ul className="footer-list">
-          <li className="footer-item">
-            <Link className="footer-link" href="/aboutcompany">
-              About Company
-            </Link>
-          </li>
-          <li className="footer-item">
-            <Link className="footer-link" href="/contactus">
-              Contact Us
-            </Link>
-          </li>
-          <li className="footer-item">
-            <Link className="footer-link" href="/services">
-              Services
-            </Link>
-          </li>
-          <li className="footer-item">
-            <Link className="footer-link" href="/packages">
-              Packages
-            </Link>
-          </li>
+          {siteLinks.map((item, index) => (
+            <li key={index} className="footer-item">
+              <Link className="footer-link" href={item.path}>
+                {item.name}
+              </Link>
+            </li>
+          ))}
         </ul>
       </div>
 
       <div className="footer-section">
         <h1 className="footer-title">Contacts</h1>
+        {socialDetails.map((item , index) => {
+          const Icon = item.icon;
+          return(
+            <li key = {index} className = "footer-item"> <Icon /> <span>{item.text}</span></li>
+          );
+        })}
 
-        <ul className="footer-list">
-          <li className="footer-item">
-            <Clock3 />
-            <span>Daily from 9:00 to 21:00</span>
-          </li>
-
-          <li className="footer-item">
-            <Phone />
-            <span>8 (353) 248 64 58</span>
-          </li>
-
-          <li className="footer-item">
-            <Mail />
-            <span>care41.com</span>
-          </li>
-
-          <li className="footer-item">
-            <MapPin />
-            <span>Orenburg, Shevchenko St., 169</span>
-          </li>
-
-          <li className="footer-socials">
-  <a href="https://www.instagram.com/" className="social-icon">
-    <Instagram />
-  </a>
-
-  <a href="https://www.facebook.com/" className="social-icon">
-    <Facebook />
-  </a>
-
-  <a href="https://www.linkedin.com/login" className="social-icon">
-    <Linkedin />
-  </a>
-</li>
-
-        </ul>
-      </div>
+        <li className = "footer-socials">
+          {socialLinks.map((social , index) => {
+            const Icon = social.icon;
+            return (
+              <a key = {index} className = "socia-icon" target = "_blank" href = {social.link}><Icon /></a>
+            );
+          })}
+        </li>
+       </div>
     </footer>
   );
 }
