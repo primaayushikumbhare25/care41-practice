@@ -10,7 +10,9 @@ export default function GoalSection() {
     <section className="goal-section">
       <div className="goal-overlay">
         <div>
-          <h1 className="goal-title">{goal.title}</h1>
+          <h1 className="goal-title">
+            {goal.title.replace("Your ", "Your \n")}
+          </h1>
         </div>
 
         <div className="ciclegoals">

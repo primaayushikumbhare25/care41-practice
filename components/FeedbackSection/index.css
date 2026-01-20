@@ -1,11 +1,18 @@
+.feedbacksection{
+  background-color: #F8F9FA;
+  padding: 51px 173px;
+
+}
+
 .testimonials {
   max-width: 1200px;
   margin: 80px auto;
-  padding: 0 24px;
+  /* padding: 0 24px; */
   text-align: center;
 }
 
 .testimonials-title {
+  margin : 80px auto;
   font-size: 32px;
   font-weight: 600;
   margin-bottom: 48px;
@@ -22,8 +29,7 @@
 .testimonial-card {
   background: #ffffff;
   padding: 40px 24px;
-  border-radius: 12px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  border-radius: 0px;
   max-width: 320px;
   display: flex;
   flex-direction: column;
@@ -51,8 +57,8 @@
 }
 
 .testimonial-user .name {
-  font-weight: 500;
-  color: #6b7280;
+  font-weight: 400;
+  color: #9ca3af;
 }
 
 .dots {

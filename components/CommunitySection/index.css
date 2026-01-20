@@ -1,12 +1,65 @@
 .community {
-  max-width: 1200px;
-  margin: 80px auto;
-  padding: 0 24px;
-  text-align: left;
+  padding: 39px 140px;
+  background: #fff;
 }
+
+/* Heading area */
+
+.community-header {
+  max-width: 700px;
+  margin-bottom: 40px;
+}
+
 .community-heading {
-  font-size: 40px;
-  font-weight: 600;
-  margin-bottom: 48px;
-  color: #1f2937;
+  font-size: 42px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.community-para {
+  font-size: 16px;
+  color: #666;
+  line-height: 1.6;
+  font-weight: 500;
+}
+
+/* Cards layout */
+
+.community-cards {
+  display: flex;
+  gap: 40px;
+}
+
+/* Individual card */
+
+.community-card {
+  display: flex;
+  background: #4A90E2;
+  color: white;
+  overflow: hidden;
+  width: 380px;
+  height: 250px;
+}
+
+/* Text section */
+
+.card-content {
+  padding: 30px;
+  flex: 1;
+}
+
+.card-content h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.card-content p {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+/* Image section */
+
+.card-image img {
+  object-fit: cover;
 }

@@ -1,0 +1,19 @@
+{
+    "title" : "What else do you need to know about our service?",
+    "paragraph" : "Our company provides a full range of services.",
+     "faqs" : [
+  {
+    "question": "How do you manage the quality of your services?",
+    "answer": "We provide professional caregiver services for elderly people."
+  },
+  {
+    "question": "How much does the service cost? How will I be billed?",
+    "answer": "Yes, we offer 24/7 home nursing support."
+  },
+  {
+    "question": "Where and to whom is this Service available?",
+    "answer": "You can submit the form and our team will contact you."
+  }
+]
+
+}

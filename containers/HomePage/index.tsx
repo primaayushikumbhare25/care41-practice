@@ -4,6 +4,9 @@ import ServiceSection from "@/components/ServiceSection";
 import GoalSection from "@/components/GoalSection";
 import FeedbackSection from "@/components/FeedbackSection";
 import Community from "@/components/CommunitySection";
+import CaregiverService from "@/components/CaregiverService";
+import QueAndAns from "@/components/QueAndAns";
+import Footer from "@/components/Footer";
 function HomePage() {
   return (
     <div>
@@ -13,6 +16,9 @@ function HomePage() {
       <GoalSection />
       <FeedbackSection />
       <Community />
+      <CaregiverService/>
+      <QueAndAns />
+      <Footer />
     </div>
   );
 }
