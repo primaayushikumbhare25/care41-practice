@@ -1,13 +1,3 @@
-/* .services-section {
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
-
-  max-width: 1200px;  
-  width: 100%;
-  margin: 80px auto;  
-  padding: 0 10px;    
-} */
  .services-section {
   max-width: 1200px;
   margin: 80px auto;
@@ -15,12 +5,10 @@
 
   display: flex;
   flex-direction: column;
-  gap: 40px;
-  text-align: center;
+  gap: 38px;
+  text-align: left;
   margin-left : 35px auto;
 }
-
-
 
 .heading {
   font-size: 40px;
@@ -43,56 +31,56 @@
 .cards {
   display: flex;
   gap: inherit;
-  margin-right: 45px;
-  margin-left : 45px;
+  margin-right: -68px;
+  margin-left : -2px;
 }
 .cards-wrapper {
   position: relative;
-  border-radius: 16px;
+  border-radius: 8px;
   padding: 24px;
   overflow: hidden;
   background: #eaedf3;
-  padding: 14px 16px;
+  padding: 20px 20px;
   border-radius: 14px;
-  width: 282px;
-  height: 301px;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  width: 450px;
+  height: 280px;
+
 }
 .cards-wrapper2 {
   position: relative;
-  border-radius: 16px;
+  border-radius: 8px;
   padding: 24px;
   overflow: hidden;
-  background: #6cc57c;
-  padding: 14px 16px;
+  background:  #eaedf3;
+  padding: 20px 20px;
   border-radius: 14px;
-  width: 282px;
-  height: 301px;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  width:450px;
+  height: 280px;
+
 }
 .cards-wrapper3 {
   position: relative;
-  border-radius: 16px;
+  border-radius: 9px;
   padding: 24px;
   overflow: hidden;
   background: #eaedf3;
-  padding: 14px 16px;
+  padding: 20px 20px;
   border-radius: 14px;
-  width: 282px;
-  height: 301px;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  width: 450px;
+  height: 280px;
+
 }
 .cards-wrapper4 {
   position: relative;
-  border-radius: 16px;
+  border-radius: 9px;
   padding: 24px;
   overflow: hidden;
   background: #eaedf3;
-  padding: 14px 16px;
+  padding: 20px 20px;
   border-radius: 14px;
-  width: 282px;
-  height: 301px;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  width: 450px;
+  height: 280px;
+
 }
 .card-heading {
   font-size: 20px;
@@ -140,7 +128,7 @@
   margin-top: 24px;
   text-align: left;
   display: flex;
-  margin-left: 40px;
+  margin-left: 0px;
 }
 
 .services-section .more-link {
@@ -151,7 +139,7 @@
   font-family: Poppins;
   font-size: 14px;
   font-weight: 400;
-  color: #4a90e2;
+  color: #4A90E2;
   text-decoration: none;
   cursor: pointer;
   width: 250;
@@ -182,7 +170,7 @@
   gap: 10px;
   font-size: 14px;
   font-weight: 500;
-  color: #2563eb;
+  color: #4A90E2;
   text-decoration: none;
 }
 
@@ -197,4 +185,35 @@
   justify-content: center;
   font-size: 14px;
   transition: all 0.25s ease;
+}
+
+.cards-wrapper,
+.cards-wrapper2,
+.cards-wrapper3,
+.cards-wrapper4 {
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.cards-wrapper:hover,
+.cards-wrapper2:hover,
+.cards-wrapper3:hover,
+.cards-wrapper4:hover {
+  background: #6cc57c; 
+  color: #ffffff;
+  transform: translateY(-6px);
+}
+
+.cards-wrapper:hover .card-heading,
+.cards-wrapper2:hover .card-heading,
+.cards-wrapper3:hover .card-heading,
+.cards-wrapper4:hover .card-heading {
+  color: #ffffff;
+}
+
+.cards-wrapper:hover p,
+.cards-wrapper2:hover p,
+.cards-wrapper3:hover p,
+.cards-wrapper4:hover p {
+  color: #ffffff;
 }

@@ -6,7 +6,7 @@
 .care {
   padding: 40px;
 }
-.card{
+.card {
   font-size: 60px;
   font-weight: 600;
   color: #000000;
@@ -43,13 +43,6 @@
   color: #3f3f3f;
 }
 
-/* .care-form input {
- padding: 20px 20px;
-  font-size: 14px;
-  border: 1px solid #e5e7eb;
-  border-radius: 8px;
-  outline: none;
-} */
 .care-form input:not(.phone-input) {
   padding: 20px 20px;
   font-size: 14px;
@@ -57,11 +50,6 @@
   border-radius: 8px;
   outline: none;
 }
-
-
-/* .care-form input:focus {
-  border-color: #ffffff;
-} */
 
 .phone-field {
   display: flex;
@@ -82,7 +70,6 @@
   flex: 1;
 }
 
-
 .checkbox {
   display: flex;
   gap: 10px;
@@ -99,10 +86,6 @@
 .checkbox label {
   line-height: 1.4;
 }
-
-
-
-
 
 .checkbox a {
   color: #4f8df6;
@@ -128,42 +111,29 @@
 
 @media (min-width: 1024px) {
   .card {
-    display : flex;
     color: #000;
     letter-spacing: normal;
-    letter-spacing: -.5px;
+    letter-spacing: -0.5px;
     margin-bottom: 12px;
-    font-size: 42px;
+    font-size: 32px;
     font-weight: 550;
     line-height: 1.15;
-}
-}
+  }
 
-/* .phone-wrapper {
-  display: flex;
-  align-items: center;
-  border: 1px solid #e5e7eb;
-  border-radius: 10px;
-  background: #fff;
+  .overall {
+    gap: 41px;
+    margin-top: 71px;
+    margin-left: 36px;
+    display: flex;
+  }
+  .form-subtext {
+    font-size: 19px;
+  }
+  .form {
+    max-width: 400px;
+    margin-left: 150px;
+  }
 }
-
-.country-select {
-  border: none;
-  outline: none;
-  font-size: 16px;
-  font-weight: 300;
-  cursor: pointer;
-  background: transparent;
-  transition: all 0.2s ease-in-out;
-  padding : 15px;
-
-}
-
-.phone-input {
-  border: none;
-  outline: none;
-  box-shadow: none;
-} */
 
 .phone-wrapper {
   display: flex;
@@ -194,7 +164,6 @@
 }
 
 .phone-wrapper:focus-within {
-  border-color: #3b82f6;
-  box-shadow: 0 0 0 3px rgba(59,130,246,0.12);
+  border-color: #0049bf;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.12);
 }
-

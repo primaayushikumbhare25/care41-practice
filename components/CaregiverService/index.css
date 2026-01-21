@@ -1,0 +1,111 @@
+.caregiver-wrapper {
+  display: flex;
+  justify-content: center;
+  padding: 60px 20px;
+}
+
+ .caregiver-card {
+  background-color: #6cc57c;
+  border-radius: 14px;
+  width: 100%;
+  max-width: 1200px;
+  padding: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end; 
+}
+
+.caregiver-left {
+  width: 55%;
+  color: white;
+}
+
+.caregiver-left h1 {
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 1.2;
+  margin-bottom: 12px;
+}
+
+.caregiver-left p {
+  font-size: 16px;
+  margin-bottom: 30px;
+  color: #ffffff;
+}
+
+
+.caregiver-form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.caregiver-form input {
+  padding: 14px 16px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  color: black;
+  background-color: white;
+  font-size: 15px;
+}
+
+.caregiver-form button {
+  margin-top: 10px;
+  padding: 14px;
+  border-radius: 8px;
+  border: none;
+  background-color: #2f4058;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.caregiver-form button:hover {
+  opacity: 0.9;
+}
+
+.caregiver-right img {
+  object-fit: contain;
+  margin-bottom: -50px;
+}
+
+.phone-group {
+  display: flex;
+  background: rgb(255, 255, 255);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.phone-group select {
+  border: none;
+  outline: none;
+  padding: 14px;
+  font-size: 15px;
+  background: #ffffff;
+  color: #787878;
+  cursor: pointer;
+}
+
+.phone-group input {
+  border: none;
+  outline: none;
+  flex: 1;
+  padding: 14px;
+  font-size: 15px;
+}
+
+@media (max-width: 900px) {
+  .caregiver-card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .caregiver-left {
+    width: 100%;
+  }
+
+  .caregiver-right {
+    margin-top: 30px;
+  }
+}

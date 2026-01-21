@@ -1,7 +1,7 @@
 .overall {
   display: flex;
   gap: 100px;
-  margin-left : 60px;
+  margin-left: 60px;
   margin-top: 80px;
 }
 
@@ -19,9 +19,8 @@
 }
 
 .care {
-  max-width: 642x;
   padding: 40px;
-  width : 720px;
+  width: 100%;
 }
 
 .form-heading {
@@ -55,7 +54,6 @@
   font-size: 16px;
 }
 
-
 .care-form > input {
   padding: 18px 20px;
   font-size: 14px;
@@ -79,24 +77,19 @@
   border-right: 1px solid #e5e7eb;
 }
 
-/* .phone-field input {
-  border: none;
-  flex: 1;
-} */
- .phone-field input {
+.phone-field input {
   border: 0 !important;
   outline: none;
   box-shadow: none;
   border-radius: 0;
 }
 
-
 .checkbox {
   display: flex;
   gap: 10px;
-  font-size: 15px;
+  font-size: 14px;
   color: #555;
-  line-height: 1.4;
+  line-height: 1.5;
   margin-top: 6px;
 }
 
@@ -137,28 +130,15 @@
   position: absolute;
   border-radius: 20px;
   overflow: hidden;
-  /* width: 260px;
-  height: 320px; */
 }
-/* .image {
-  position: absolute;
-  border-radius: 12px;
-  overflow: hidden;
-  z-index: 1;   
-} */
 
- .image-one {
+.image-one {
   top: -25px;
   left: 20px;
   width: 270px;
   height: 380px;
 }
 
-/* .image-two {
-  top: 250px;
-  left: 250px;
-  border-radius: 15px;
-} */
 .image-two {
   top: 250px;
   left: 250px;
@@ -169,30 +149,6 @@
   border-radius: 20px;
   overflow: hidden;
 }
-
-/* .image-one {
-  top: 20px;
-  left: 20px;
-}
-
-.image-two { */
-/* bottom: 40px;
-  right: 40px;
-  width: 281.66796875;
-  height: 337.67840576171875;
-  top: 250.16px;
-  left: 280px;
-  overflow: hidden; */
-/*  
-  top: 250px;
-  left: 280px;
-  width: 282px;
-  height: 338px;
-
-
-} */
-
-/* Cards */
 .info-card {
   position: absolute;
   margin-left: 2px;
@@ -279,21 +235,4 @@
   height: 80%;
   object-fit: cover;
   border-radius: 20px;
-}
-
-@media (max-width: 1024px) {
-  .overall {
-    flex-direction: column;
-    align-items: center;
-    margin-left: 0;
-  }
-
-  .form {
-    margin-left: 0;
-    max-width: 100%;
-  }
-}
-.form-heading {
-  position: relative;
-  z-index: 9999;
 }

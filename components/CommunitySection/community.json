@@ -1,3 +1,21 @@
 {
-    "title" : "Community Connect"
+  "title": "Community Connect",
+  "paragraph": "Discover support, stories, and tips from caregivers like you. Stay informed and engaged with events, news, and insights.",
+  "cards": [
+    {
+      "heading": "Share Your Journey",
+      "text": "Connect with others, share experiences, and find solace in stories of resilience and compassion.",
+      "image": "/connect3.png"
+    },
+    {
+      "heading": "Stay Informed",
+      "text": "Access the latest caregiving news, events, and updates to keep you informed and prepared.",
+      "image": "/connect3.png"
+    },
+    {
+      "heading": "Learn and Grow",
+      "text": "Explore tips and resources tailored for caregivers, empowering you to navigate challenges and provide better care.",
+      "image": "/connect3.png"
+    }
+  ]
 }

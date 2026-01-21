@@ -7,7 +7,8 @@ import data from "./feedbackSection.json";
 
 const Testimonials = () => {
   return (
-    <section className="testimonials">
+    <div className = "feedbacksection">
+        <section className="testimonials">
       <h2 className="testimonials-title">{data.title}</h2>
 
       <div className="testimonials-cards">
@@ -26,6 +27,7 @@ const Testimonials = () => {
 
             <div className="testimonial-user">
               <span className="name">{item.name},</span>
+              <br/>
               <span className="role">{item.role}</span>
             </div>
           </div>
@@ -38,6 +40,8 @@ const Testimonials = () => {
         <span className="dot"></span>
       </div>
     </section>
+    </div>
+    
   );
 };
 
