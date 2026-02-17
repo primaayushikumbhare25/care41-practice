@@ -6,12 +6,11 @@ body {
   margin: 0;
 }
 
-
 .services-hero {
   height: 220px;
   padding: 20px;
   background:
-    linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("/9fec1539e35ee839ae0cdc6e3d71472af864d185.png") center/cover no-repeat;
   display: flex;
   align-items: center;
@@ -26,9 +25,8 @@ body {
   line-height: 1.4;
 }
 
-
 .services-info {
-  background: #4A90E2;
+  background: #4a90e2;
   color: white;
   padding: 25px 20px;
   display: flex;
@@ -44,14 +42,13 @@ body {
 
 .contact-btn {
   background: white;
-  color: #4A90E2;
+  color: #4a90e2;
   padding: 10px 30px;
   border-radius: 8px;
   border: none;
   cursor: pointer;
   font-weight: 600;
 }
-
 
 .tabs-wrapper {
   position: relative;
@@ -76,7 +73,7 @@ body {
 .tab-btn {
   padding: 10px 24px;
   border-radius: 8px;
-  border: 1px solid #A2A2A2;
+  border: 1px solid #a2a2a2;
   background: #fff;
   cursor: pointer;
   font-size: 14px;
@@ -100,18 +97,21 @@ body {
   cursor: pointer;
   position: absolute;
   z-index: 10;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
-.circle-btn.left { left: 5px; }
-.circle-btn.right { right: 5px; }
-
+.circle-btn.left {
+  left: 5px;
+}
+.circle-btn.right {
+  right: 5px;
+}
 
 .service-card {
   background: white;
   padding: 20px;
   border-radius: 12px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
   display: flex;
   flex-direction: column;
   gap: 12px;
@@ -145,10 +145,10 @@ body {
 }
 
 .price-box {
-  background: #FFF4EE;
+  background: #fff4ee;
   padding: 12px;
   border-radius: 8px;
-  border: 1px solid #E8D9D0;
+  border: 1px solid #e8d9d0;
   font-size: 13px;
 }
 
@@ -165,9 +165,7 @@ body {
   gap: 6px;
 }
 
-
 @media (min-width: 768px) {
-
   .services-hero {
     height: 280px;
   }
@@ -184,9 +182,7 @@ body {
   }
 }
 
-
 @media (min-width: 1024px) {
-
   .services-hero {
     height: 320px;
   }
@@ -205,9 +201,9 @@ body {
 }
 
 @media (max-width: 360px) {
-   .header{
-    width:auto;
-   }
+  .header {
+    width: auto;
+  }
   .services-hero {
     height: 180px;
     padding: 15px;
@@ -247,7 +243,6 @@ body {
     font-size: 14px;
   }
 
-
   .service-card {
     padding: 16px;
   }
@@ -279,7 +274,7 @@ body {
   padding: 20px;
   background: #f5f7fa;
   display: grid;
-  grid-template-columns: 1fr;   
+  grid-template-columns: 1fr;
   gap: 20px;
 }
 
@@ -295,9 +290,7 @@ body {
   }
 }
 
-
 @media (max-width: 360px) {
-
   .header {
     padding: 8px 10px;
   }

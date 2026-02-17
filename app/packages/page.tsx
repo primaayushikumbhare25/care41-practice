@@ -1,12 +1,13 @@
 "use client";
 import Header from "@/components/Header";
 import "./page.css";
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import Footer from "@/components/Footer";
 import QueAndAns from "@/components/QueAndAns";
 
 export default function PackagesPage() {
   const tabsRef = useRef<HTMLDivElement | null>(null);
+  const [isOpen, setIsOpen] = useState(false);
 
   const scrollTabs = (direction: "left" | "right") => {
     if (tabsRef.current) {
@@ -24,17 +25,21 @@ export default function PackagesPage() {
         <h1>Core Services We Offer for Comprehensive Care</h1>
       </div>
       <div className="tabs-wrapper">
-
         <div className="pricing-container">
-        <button className="circle-btn left" onClick={() => scrollTabs("left")}>
-          ❮
-        </button>
+          <button
+            className="circle-btn left"
+            onClick={() => scrollTabs("left")}
+          >
+            ❮
+          </button>
           <div className="package-card">
             <h3>Basic</h3>
             <h2>
               $99 <span>/monthly</span>
             </h2>
-            <a href="#">Terms & Conditions</a>
+            <button className="terms-link" onClick={() => setIsOpen(true)}>
+              Terms <span>&</span> Conditions
+            </button>
 
             <div className="divider"></div>
 
@@ -53,7 +58,9 @@ export default function PackagesPage() {
             <h2>
               $349 <span>/monthly</span>
             </h2>
-            <a href="#">Terms & Conditions</a>
+            <button className="terms-link" onClick={() => setIsOpen(true)}>
+              Terms <span>&</span> Conditions
+            </button>
 
             <div className="divider"></div>
 
@@ -72,7 +79,9 @@ export default function PackagesPage() {
             <h2>
               $199 <span>/monthly</span>
             </h2>
-            <a href="#">Terms & Conditions</a>
+            <button className="terms-link" onClick={() => setIsOpen(true)}>
+              Terms <span>&</span> Conditions
+            </button>
 
             <div className="divider"></div>
 
@@ -84,21 +93,51 @@ export default function PackagesPage() {
             </ul>
             <button className="contact-btn">Contact Us</button>
           </div>
-        <button
-          className="circle-btn right"
-          onClick={() => scrollTabs("right")} 
-        >
-          ❯
-        </button>
+          <button
+            className="circle-btn right"
+            onClick={() => scrollTabs("right")}
+          >
+            ❯
+          </button>
         </div>
-        <QueAndAns/>
-        <Footer/>
+        {isOpen && (
+  <div className="modal-overlay" onClick={() => setIsOpen(false)}>
+    <div className="modal-box" onClick={(e) => e.stopPropagation()}>
+      <div className = "terms-cross">
+        <h4>Terms & Conditions</h4>
+      <button className="close-btn" onClick={() => setIsOpen(false)}>
+        ✖
+      </button>
+      </div>
+      <h3>What we offer</h3>
 
+      <ul className="terms-list">
+        <li>
+          <span>Professional Installation</span> – Our experts set up cameras for maximum coverage and efficiency.
+        </li>
+        <li>
+          <span>Regular Maintenance</span> – Keep your system in top shape with timely inspections and servicing.
+        </li>
+        <li>
+          <span>System Upgrades</span> – Enhance security with high-resolution cameras, night vision, and smart analytics.
+        </li>
+        <li>
+          <span>Remote Monitoring</span> – View live footage anytime via mobile and desktop applications.
+        </li>
+        <li>
+          <span>Motion Detection & Alerts</span> – Stay informed with real-time notifications for any suspicious activity.
+        </li>
+      </ul>
+
+    </div>
+  </div>
+)}
+        <QueAndAns />
+        <Footer />
       </div>
     </>
   );
 }
-
 
 const packages = [
   {
@@ -107,8 +146,8 @@ const packages = [
     features: [
       "All Services (Yoga, CCTV, Health etc.)",
       "24*7 Support",
-      "Community Feature Available on All Services"
-    ]
+      "Community Feature Available on All Services",
+    ],
   },
   {
     title: "Elite Package",
@@ -117,8 +156,8 @@ const packages = [
     features: [
       "All Services (Yoga, CCTV, Health etc.)",
       "24*7 Support",
-      "Community Feature Available on All Services"
-    ]
+      "Community Feature Available on All Services",
+    ],
   },
   {
     title: "Pro Package",
@@ -126,17 +165,17 @@ const packages = [
     features: [
       "All Services (Yoga, CCTV, Health etc.)",
       "24*7 Support",
-      "Community Feature Available on All Services"
-    ]
+      "Community Feature Available on All Services",
+    ],
   },
-   {
+  {
     title: "Basic",
     price: "$99",
     features: [
       "All Services (Yoga, CCTV, Health etc.)",
       "24*7 Support",
-      "Community Feature Available on All Services"
-    ]
+      "Community Feature Available on All Services",
+    ],
   },
   {
     title: "Elite Package",
@@ -145,8 +184,8 @@ const packages = [
     features: [
       "All Services (Yoga, CCTV, Health etc.)",
       "24*7 Support",
-      "Community Feature Available on All Services"
-    ]
+      "Community Feature Available on All Services",
+    ],
   },
   {
     title: "Pro Package",
@@ -154,7 +193,7 @@ const packages = [
     features: [
       "All Services (Yoga, CCTV, Health etc.)",
       "24*7 Support",
-      "Community Feature Available on All Services"
-    ]
-  }
+      "Community Feature Available on All Services",
+    ],
+  },
 ];

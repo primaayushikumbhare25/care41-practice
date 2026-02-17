@@ -9,11 +9,14 @@ import QueAndAns from "@/components/QueAndAns";
 import Footer from "@/components/Footer";
 function HomePage() {
   return (
+
     <div>
+      <div style={{ background: "#ffffff", minHeight: "100vh" }}>
       <Header />
       <HeroSection />
       <ServiceSection />
       <GoalSection />
+      </div>
       <FeedbackSection />
       <Community />
       <CaregiverService/>

@@ -1,3 +1,7 @@
+
+/* GOAL SECTION */
+
+
 .goal-section {
   width: 100%;
   min-height: 100vh;
@@ -11,72 +15,124 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 80px 8%;
   margin-top: 100px;
 }
-
 
 .goal-overlay {
   width: 100%;
   text-align: center;
 }
 
-
+/* Fluid title */
 .goal-title {
-  font-size: 55px;
+  font-size: clamp(28px, 5vw, 55px);
   color: white;
   margin-bottom: 60px;
   text-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
   font-weight: 500;
-    white-space: pre-line;
+  white-space: pre-line;
 }
 
-
+/* Goals row */
 .ciclegoals {
   display: flex;
   justify-content: center;
-  gap: 120px;
+  gap: 8%;
+  flex-wrap: wrap;
 }
 
-
+/* Individual goal */
 .goal-overlay .goals {
   display: flex;
-  flex-direction: column;  
+  flex-direction: column;
   align-items: center;
   gap: 14px;
+  flex: 1 1 200px;
+  max-width: 250px;
 }
 
-
+/* Circle (responsive size) */
 .smallcircle,
 .smallcircle1,
 .smallcircle2 {
-  width: 80px;
-  height: 80px;
+  width: clamp(60px, 8vw, 80px);
+  height: clamp(60px, 8vw, 80px);
   background-color: #ffffff;
   border-radius: 50%;
-
   display: flex;
   align-items: center;
   justify-content: center;
 }
-
 
 .smallcircle img,
 .smallcircle1 img,
 .smallcircle2 img {
+  width: 60%;
+  height: 60%;
   object-fit: contain;
 }
 
-
+/* Text under circle */
 .small-headings {
   display: flex;
   justify-content: center;
 }
 
-
 .form-heading {
-  font-size: 16px;
+  font-size: clamp(14px, 2vw, 16px);
   font-weight: 700;
   color: #ffffff;
-  line-height: 19.2px;
+  line-height: 1.2;
   margin: 0;
 }
+
+/* Tablet (≤ 1024px) */
+
+
+@media (max-width: 1024px) {
+
+  .goal-section {
+    padding: 70px 5%;
+  }
+
+  .goal-title {
+    margin-bottom: 40px;
+  }
+}
+
+
+/* Mobile (≤ 768px) */
+
+@media (max-width: 768px) {
+
+  .goal-section {
+    padding: 60px 20px;
+    min-height: auto;
+  }
+
+  .ciclegoals {
+    gap: 40px;
+  }
+
+  .goal-title {
+    margin-bottom: 30px;
+  }
+}
+
+
+/* Small Mobile (≤ 480px) */
+
+
+@media (max-width: 480px) {
+ 
+  .goal-section {
+    margin-top: 60px;
+  }
+
+  .ciclegoals {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+}   

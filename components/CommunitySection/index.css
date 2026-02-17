@@ -1,10 +1,10 @@
+
 .community {
-  padding: 39px 140px;
+  padding: 40px 8%;
   background: #fff;
 }
 
-/* Heading area */
-
+/* Heading */
 .community-header {
   max-width: 700px;
   margin-bottom: 40px;
@@ -24,25 +24,24 @@
 }
 
 /* Cards layout */
-
 .community-cards {
   display: flex;
   gap: 40px;
+  /* flex-wrap: wrap; */
 }
 
-/* Individual card */
-
+/* Card */
 .community-card {
   display: flex;
   background: #4A90E2;
   color: white;
   overflow: hidden;
-  width: 380px;
-  height: 250px;
+  flex: 1 1 350px;  
+  max-width: 100%;
+  border-radius: 12px;
 }
 
-/* Text section */
-
+/* Text */
 .card-content {
   padding: 30px;
   flex: 1;
@@ -58,8 +57,83 @@
   line-height: 1.5;
 }
 
-/* Image section */
-
+/* Image */
 .card-image img {
+  width: 100%;
+  height: 100%;
   object-fit: cover;
+}
+
+
+/* ========================= */
+/* Tablet (≤ 1024px)        */
+/* ========================= */
+
+@media (max-width: 1024px) {
+  .community {
+    padding: 40px 5%;
+  }
+
+  .community-heading {
+    font-size: 34px;
+  }
+
+  .community-cards {
+    gap: 25px;
+  }
+}
+
+
+/* Small Tablet (≤ 768px)   */
+
+
+@media (max-width: 768px) {
+
+  .community-heading {
+    font-size: 28px;
+  }
+
+  .community-card {
+    flex-direction: column;
+  }
+
+  .card-image img {
+    height: 200px;
+  }
+}
+
+
+/* Mobile (≤ 480px)         */
+
+
+@media (max-width: 480px) {
+
+  .community {
+    padding: 30px 20px;
+  }
+
+  .community-heading {
+    font-size: 22px;
+  }
+
+  .community-cards{
+    flex-wrap: wrap;
+  }
+
+  .community-para {
+    font-size: 14px;
+  }
+
+  .card-content {
+    padding: 20px;
+  }
+
+  .card-content h3 {
+    font-size: 18px;
+  }
+
+  .card-content p {
+    font-size: 13px;
+  }
+
 }

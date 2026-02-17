@@ -236,3 +236,104 @@
   object-fit: cover;
   border-radius: 20px;
 }
+
+/*  Mobile Responsive - 360px   */
+
+
+@media (max-width: 480px) {
+
+  .overall {
+    flex-direction: column;
+    gap: 30px;
+    margin: 20px;
+  }
+
+  .hero {
+    flex-direction: column;
+    padding: 20px;
+    gap: 30px;
+  }
+
+  .form {
+    max-width: 100%;
+    margin-left: 0;
+  }
+
+  .care {
+    padding: 10px;
+  }
+
+  .form-heading {
+    font-size: 32px;
+    line-height: 1.2;
+  }
+
+  .form-subtext {
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+
+  .care-form input:not(.phone-input) {
+    padding: 14px;
+    font-size: 14px;
+  }
+
+  .phone-wrapper {
+    padding: 0 10px;
+  }
+
+  .phone-input {
+    padding: 14px 8px;
+    font-size: 14px;
+  }
+
+  .checkbox {
+    font-size: 13px;
+    line-height: 1.4;
+  }
+
+  .checkbox input {
+    width: 16px;
+    height: 16px;
+  }
+
+  .submit-btn {
+    font-size: 14px;
+    padding: 12px;
+  }
+
+
+  .care-container {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+
+  .image {
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+  }
+
+  .image-one,
+  .image-two {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+  }
+
+  .image img {
+    height: auto;
+  }
+
+  .info-card,
+  .info-card1,
+  .info-card2,
+  .center-icon {
+    display: none;
+  }
+
+}

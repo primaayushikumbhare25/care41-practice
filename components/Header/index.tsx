@@ -20,7 +20,7 @@ export default function Header() {
           <Image src="/logo.png" alt="My App Logo" width={95} height={28} />
         </Link>
 
-        {/* Hamburger */}
+       
         <div
           className="hamburger"
           onClick={() => setMenuOpen(!menuOpen)}
@@ -50,6 +50,14 @@ export default function Header() {
                 className={pathname === "/packages" ? "active" : ""}
               >
                 Packages
+              </Link>
+            </li>
+                        <li>
+              <Link
+                href="/aboutus"
+                className={pathname === "/aboutus" ? "active" : ""}
+              >
+                About us
               </Link>
             </li>
           </ul>
