@@ -21,7 +21,6 @@ body {
   width: 100%;
   max-width: 1300px;
   min-height: 100vh;
-  /* height: auto; */
   background: white;
   display: flex;
   border-radius: 18px;
@@ -164,4 +163,3 @@ label {
     padding: 40px;
   }
 }
-

@@ -12,7 +12,7 @@ export default function Signup() {
   const [email, setEmail] = useState("");
 
   return (
-    // <AuthLayout>
+    
     <div className="signup-wrapper">
       <div className="signup-container">
         <div className="left-panel">
@@ -70,6 +70,6 @@ export default function Signup() {
         </div>
       </div>
     </div>
-    // </AuthLayout>
+    
   );
 }
