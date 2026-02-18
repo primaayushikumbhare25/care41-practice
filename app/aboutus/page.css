@@ -8,7 +8,7 @@ body {
   height: 220px;
   padding: 20px;
   background:
-    linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("/9fec1539e35ee839ae0cdc6e3d71472af864d185.png") center/cover no-repeat;
   display: flex;
   align-items: center;
@@ -65,7 +65,7 @@ body {
 
 .empower-text {
   flex: 1 1 500px;
-  font-size:24px ;
+  font-size: 24px;
 }
 
 .empower-text h3 {
@@ -116,22 +116,21 @@ body {
 /* Colors */
 
 .card.blue {
-  background: #4A90E2;
+  background: #4a90e2;
 }
 
 .card.green {
   background: #6cc57c;
 }
 
-.teams h3{
+.teams h3 {
   font-size: clamp(40px, 2vw, 18px);
   font-weight: 500;
   margin-bottom: 8px;
   justify-items: center;
   text-align: center;
-  margin-top:80px;
+  margin-top: 80px;
 }
-
 
 @media (max-width: 1024px) {
   .empower-section {
@@ -143,7 +142,6 @@ body {
   }
 }
 
-
 @media (max-width: 768px) {
   .empower-content {
     flex-direction: column;
@@ -153,7 +151,6 @@ body {
     margin-bottom: 30px;
   }
 }
-
 
 @media (max-width: 480px) {
   .empower-section {
@@ -169,7 +166,6 @@ body {
 
 .team-section {
   margin-top: 100px;
-  padding: 60px 8%;
   background: #ffffff;
   text-align: center;
 }
@@ -262,13 +258,12 @@ body {
 }
 
 .team-img {
-  object-fit: cover; 
+  object-fit: cover;
 }
-
 
 .team-img {
   object-fit: cover;
 }
-.goal-team{
-      margin-top: -90px;
+.goal-team {
+  margin-top: -90px;
 }

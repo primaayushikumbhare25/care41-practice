@@ -151,7 +151,7 @@
 }
 .info-card {
   position: absolute;
-  margin-left: 2px;
+  margin-left: 261px;
   margin-right: 2px;
   background: white;
   padding: 14px 28px;
@@ -239,19 +239,54 @@
 
 /*  Mobile Responsive - 360px   */
 
-
-@media (max-width: 480px) {
-
+@media (max-width: 1107px) {
   .overall {
     flex-direction: column;
-    gap: 30px;
-    margin: 20px;
+    gap: 50px;
+    margin-left: -123px;
+  }
+}
+
+@media (max-width: 480px) {
+  .image-one {
+    width: 190px;
+    height: 372px;
+    top: -25px;
+    left: 20px;
+  }
+  .image-two {
+    width: 190px;
+    left: 220px;
+  }
+  .center-icon {
+    left: 45%;
+  }
+  .overall {
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    margin: 66px 16px;
   }
 
+  .info-card {
+    width: 155px;
+    padding: 17px 23px;
+    margin-left: 177px;
+    font-weight: 300;
+    color: #000000;
+  }
   .hero {
     flex-direction: column;
-    padding: 20px;
+    padding: 0;
     gap: 30px;
+  }
+  .info-card2 {
+    top: 326px;
+    left: 112px;
+  }
+  .bottom-card {
+    bottom: 20px;
+    right: 65px;
   }
 
   .form {
@@ -260,11 +295,11 @@
   }
 
   .care {
-    padding: 10px;
+    padding: 0;
   }
 
   .form-heading {
-    font-size: 32px;
+    font-size: 28px;
     line-height: 1.2;
   }
 
@@ -275,65 +310,40 @@
 
   .care-form input:not(.phone-input) {
     padding: 14px;
-    font-size: 14px;
-  }
-
-  .phone-wrapper {
-    padding: 0 10px;
-  }
-
-  .phone-input {
-    padding: 14px 8px;
-    font-size: 14px;
-  }
-
-  .checkbox {
-    font-size: 13px;
-    line-height: 1.4;
-  }
-
-  .checkbox input {
-    width: 16px;
-    height: 16px;
   }
 
   .submit-btn {
-    font-size: 14px;
-    padding: 12px;
+    width: 100%;
   }
-
+  .care-wrapper {
+    padding: 0;
+    justify-content: center;
+  }
 
   .care-container {
-    width: 100%;
-    height: auto;
-    position: relative;
+    transform-origin: left;
+  }
+  .top-card {
+    top: 20px;
+    right: 10px;
   }
 
-  .image {
-    position: relative;
-    width: 100%;
-    height: auto;
-    margin-bottom: 15px;
+  .bottom-card {
+    bottom: 20px;
+    right: 48px;
   }
 
-  .image-one,
-  .image-two {
-    position: relative;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: auto;
+  .info-card1 {
+    margin: 0;
+    top: 120px;
+    right: 10px;
   }
 
-  .image img {
-    height: auto;
+  .info-card2 {
+    margin: 0;
+    top: 330px;
+    left: 134px;
+    color: black;
+    font-weight: 400;
   }
-
-  .info-card,
-  .info-card1,
-  .info-card2,
-  .center-icon {
-    display: none;
-  }
-
 }
