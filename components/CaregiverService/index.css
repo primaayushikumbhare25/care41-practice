@@ -109,9 +109,8 @@
     margin-top: 30px;
   }
 }
-/* ============================= */
-/*  Caregiver Mobile - 360px    */
-/* ============================= */
+
+
 
 @media (max-width: 480px) {
 
@@ -173,7 +172,7 @@
   .caregiver-right img {
     width: 100%;
     height: auto;
-    margin-bottom: 0; /* remove negative margin */
+    margin-bottom: 0;
   }
 
 }

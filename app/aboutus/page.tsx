@@ -8,7 +8,7 @@ import Footer from "@/components/Footer";
 
 const page = () => {
   return (
-    <div>
+    <>
       <Header />
       <div className="services-hero">
         <h1>About us</h1>
@@ -116,7 +116,7 @@ const page = () => {
       </div>
       <FeedbackSection />
       <Footer/>
-    </div>
+    </>
   );
 };
 export default page;

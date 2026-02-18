@@ -3,6 +3,8 @@
   background: #ffffff;
   box-shadow: 0 2px 7px #f8f9fa;
   height: 90px;
+  position: relative;
+  z-index: 1000;
 }
 
 .navbar {

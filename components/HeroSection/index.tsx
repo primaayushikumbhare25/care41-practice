@@ -13,7 +13,7 @@ function Hero() {
         <div className="image image-one">
           <Image src="/image1.jpg" alt="Care" width={280} height={600} />
         </div>
-        <div className="info-card top-card">
+        <div className="info-card">
           <h4>Care</h4>
           <p>
             Personalized home care for comfort and well-being.

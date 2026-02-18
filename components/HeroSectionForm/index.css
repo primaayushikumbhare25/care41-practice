@@ -259,12 +259,64 @@
   .image img {
     height: auto;
   }
+}
 
-  .info-card,
-  .info-card1,
-  .info-card2,
-  .center-icon {
-    display: none; 
+
+@media (max-width: 480px) {
+
+  /* Main Layout */
+  .overall {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    margin: 20px 16px;
+  }
+    .info-card {
+        width: 185px;
+        padding: 17px 23px;
+    }
+
+  .hero {
+    flex-direction: column;
+    padding: 0;
+    gap: 30px;
   }
 
+  /* FORM SIDE */
+  .form {
+    max-width: 100%;
+    margin-left: 0;
+  }
+
+  .care {
+    padding: 0;
+  }
+
+  .form-heading {
+    font-size: 28px;
+    line-height: 1.2;
+  }
+
+  .form-subtext {
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+
+  .care-form input:not(.phone-input) {
+    padding: 14px;
+  }
+
+  .submit-btn {
+    width: 100%;
+  }
+
+  .care-wrapper {
+    padding: 0;
+    justify-content: center;
+  }
+
+  .care-container {
+    transform: scale(0.85); 
+    transform-origin: left;
+  }
 }
