@@ -1,0 +1,274 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+}
+.services-hero {
+  height: 220px;
+  padding: 20px;
+  background:
+    linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+    url("/9fec1539e35ee839ae0cdc6e3d71472af864d185.png") center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  font-weight: 400;
+  font-size: 40px;
+}
+
+.empower-section {
+  background: #ffffff;
+  padding: 80px 8%;
+}
+
+.empower-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.empower-title {
+  font-size: clamp(24px, 4vw, 42px);
+  font-weight: 600;
+  color: #1f2937;
+  margin-bottom: 50px;
+  line-height: 1.3;
+}
+
+/* Layout */
+
+.empower-content {
+  display: flex;
+  gap: 60px;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+/* Image */
+
+.empower-image {
+  flex: 1 1 400px;
+  max-width: 500px;
+  height: 695px;
+  max-width: 449;
+}
+
+.empower-image img {
+  width: 100%;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+/* Text Side */
+
+.empower-text {
+  flex: 1 1 500px;
+  font-size:24px ;
+}
+
+.empower-text h3 {
+  font-size: clamp(18px, 2vw, 24px);
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.empower-text span {
+  font-style: italic;
+  font-size: clamp(18px, 2vw, 20px);
+  color: #4b4c4d;
+  margin-bottom: 20px;
+}
+
+.description {
+  font-size: clamp(14px, 1.8vw, 16px);
+  line-height: 1.3;
+  margin-bottom: 40px;
+  color: #374151;
+}
+
+/* Mission Vision Cards */
+
+.mission-vision {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.card {
+  flex: 1 1 250px;
+  padding: 30px;
+  border-radius: 16px;
+  color: white;
+}
+
+.card h4 {
+  font-size: 18px;
+  margin-bottom: 12px;
+}
+
+.card p {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+/* Colors */
+
+.card.blue {
+  background: #4A90E2;
+}
+
+.card.green {
+  background: #6cc57c;
+}
+
+.teams h3{
+  font-size: clamp(40px, 2vw, 18px);
+  font-weight: 500;
+  margin-bottom: 8px;
+  justify-items: center;
+  text-align: center;
+  margin-top:80px;
+}
+
+
+@media (max-width: 1024px) {
+  .empower-section {
+    padding: 70px 5%;
+  }
+
+  .empower-content {
+    gap: 40px;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .empower-content {
+    flex-direction: column;
+  }
+
+  .empower-title {
+    margin-bottom: 30px;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .empower-section {
+    padding: 50px 20px;
+  }
+
+  .card {
+    padding: 20px;
+  }
+}
+
+/* TEAM SECTION */
+
+.team-section {
+  margin-top: 100px;
+  padding: 60px 8%;
+  background: #ffffff;
+  text-align: center;
+}
+
+.team-title {
+  font-size: clamp(22px, 4vw, 36px);
+  font-weight: 600;
+  margin-bottom: 60px;
+  color: #1f2937;
+}
+
+/* Grid Layout */
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Card */
+
+.team-card {
+  background: white;
+  padding-bottom: 20px;
+  transition: transform 0.3s ease;
+}
+
+.team-card img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.team-card h4 {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #1f2937;
+}
+
+.role {
+  font-size: 14px;
+  font-style: italic;
+  color: #6b7280;
+  margin-top: 5px;
+}
+
+/* Hover Effect */
+
+.team-card:hover {
+  transform: translateY(-6px);
+}
+
+/* Tablet */
+
+@media (max-width: 768px) {
+  .team-section {
+    padding: 50px 20px;
+  }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+  .team-grid {
+    gap: 25px;
+  }
+
+  .team-title {
+    margin-bottom: 40px;
+  }
+}
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.team-card {
+  text-align: center;
+}
+
+.team-image {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.team-img {
+  object-fit: cover; 
+}
+
+
+.team-img {
+  object-fit: cover;
+}
+.goal-team{
+      margin-top: -90px;
+}
